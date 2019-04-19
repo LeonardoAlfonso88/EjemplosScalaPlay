@@ -1,0 +1,7 @@
+@(books: scala.collection.immutable.List[Book])
+
+<ul>
+@for(libro <- books) {
+  <li>@libro.title</li>
+}
+</ul>

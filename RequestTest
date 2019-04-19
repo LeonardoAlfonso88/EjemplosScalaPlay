@@ -1,0 +1,40 @@
+POST http://localhost:8100/test
+Content-Type: application/json
+
+{
+  "idUsuario": 1,
+  "tipoPago": 1,
+  "idDireccion": 1,
+  "productos": [
+    {
+      "idProducto": 1,
+      "cantidad": 1
+    },
+    {
+      "idProducto": 2,
+      "cantidad": 1
+    }
+  ]
+}
+
+GET http://localhost:8100/
+Content-Type: application/json
+
+POST http://localhost:8100/postTest/test  
+Content-Type: application/json
+
+{
+  "idUsuario": 1,
+  "tipoPago": "NOMBRE",
+  "idDireccion": 1,
+  "productos": [
+    {
+      "idProducto": 1,
+      "cantidad": 1
+    },
+    {
+      "idProducto": 2,
+      "cantidad": 1
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+version: '3'
+services:
+  app:
+    container_name: playtest
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/root
+    ports:
+      - "8100:9000"
+    stdin_open: true
